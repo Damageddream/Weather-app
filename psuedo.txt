@@ -1,0 +1,74 @@
+-HTML-
+FORM - taking location
+
+Default location - Warsaw
+
+Wheater: wheather -icon
+Temperature: C/F 
+local time:
+local date:
+Wind:  xxxx km/h
+Humidity:   %
+Pressure: mb
+
+
+
+
+--JS--
+Module
+function fetchDatafromApi(arg = location){
+    try
+    async hit api with location
+        async return promise
+        async promise to data 
+        return data
+
+        catch error
+        
+}
+
+Module
+function process data from api call (data from api) {
+    data.target?.value? !!check what is returns!!
+}
+
+Module
+Process form data
+    target form element 
+    event listener submit 
+        retrun target value
+
+
+Module display error message
+    create div with error message
+    append div
+    reset form
+
+    reset display error - when any other action is taken
+
+Module display loading state 
+    start loading 
+        display loading 
+            3 small divs change class in 0,5 s interval
+            on change class change backgraound collor on div
+            loop 
+    finish loading
+        reset div html
+
+Module UpdateUI(data from api){
+    time = new time
+     itd...
+}
+
+Module toggle bettwen Celsius and Farenhiet (){
+    click event change class
+}
+
+Module change style depends on wheather
+    check in data -> change container class
+
+Module formvailidation
+
+Module index.js
+
+

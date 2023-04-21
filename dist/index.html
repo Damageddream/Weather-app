@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="bundle.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container sunny">
+      <div class="header">
+        <div class="title">Wheather App</div>
+        <form novalidate autocomplete="off">
+          <legend>Chose city to check wheather</legend>
+          <div class="input">
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" />
+            <button>search</button>
+          </div>
+        </form>
+      </div>
+      <div class="main">
+        <div class="iconandwhet">
+          <div class="icon"><img src="" alt="image of wheather icon" /></div>
+          <div class="wheather"></div>
+        </div>
+        <div class="temperature">
+          <div class="temp">Temperature:</div>
+          <div class="celc active"></div>
+          <div class="faren"></div>
+          <div class="celcfaren">celcius/farenheit</div>
+        </div>
+        <div class="citydate">
+          <div class="city"></div>
+          <div class="timedate">
+            <div class="time"></div>
+            <div class="date"></div>
+          </div>
+        </div>
+        <div class="restofdata">
+          <div class="wind"></div>
+          <div class="pressure"></div>
+          <div class="hummidity"></div>
+        </div>
+      </div>
+      <div class="footer sunny">@DamagedDream 2023</div>
+    </div>
+  </body>
 </html>
