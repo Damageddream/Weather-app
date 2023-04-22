@@ -1,6 +1,7 @@
 import apiCall from "./fetchAPI";
 import { ui } from "./UI";
 import { location } from "./locationData";
+import { changeStyleOnWeather } from "./styleonWeather";
 
 export const form = () => {
     const form = document.querySelector('form')
@@ -11,6 +12,8 @@ export const form = () => {
         const data = await apiCall(city)
         const newLocation = location(data)
         ui(newLocation)
+        changeStyleOnWeather(data)
+        
     })
     
 }
