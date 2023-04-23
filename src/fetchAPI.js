@@ -1,16 +1,25 @@
+import { errorHandler } from "./errorHandling";
+import loading from "./loading";
 
 const apiCall = async (location = "warsaw") => {
-    console.log('started')
+    loading.startLoading()
   try {
     const response = await fetch(
       `https://api.weatherapi.com/v1/current.json?key=3344d57ff3814694a7895849232004&q=${location}`
     );
-    const data = await response.json();
-    console.log(data)
-    console.log('finshed')
-    return data
+    if(response.ok){
+      const data = await response.json();
+      loading.stopLoading()
+      return data
+    }
+    else{
+      errorHandler.wrongCity()
+      loading.stopLoading()
+    }
+    
   } catch (error) {
-    return false
+    errorHandler.otherErrors()
+    loading.stopLoading()
   }
   
 };

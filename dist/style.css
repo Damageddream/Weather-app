@@ -240,3 +240,15 @@ img {
 .footer.snowy {
     background-color: var(--secondSnowy);
 }
+
+.invalid {
+    background-color: hsla(360, 100%, 90%, 1);
+    color:hsla(360, 100%, 40%, 1);
+    height: 40px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    display: none;
+
+    
+}
